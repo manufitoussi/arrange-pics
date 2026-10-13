@@ -8,15 +8,23 @@
       "type": "node",
       "request": "launch",
       "name": "Lancer le programme",
-      "program": "${workspaceRoot}\\index.js",
-      "cwd": "${workspaceRoot}",
+      "program": "${workspaceFolder}/index.js",
+      "cwd": "${workspaceFolder}/test",
+      "outFiles": []
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Lancer les tests",
+      "runtimeArgs": ["--test"],
+      "cwd": "${workspaceFolder}",
       "outFiles": []
     },
     {
       "type": "node",
       "request": "attach",
       "name": "Attacher au processus",
-      "port": 5858,
+      "port": 9229,
       "outFiles": []
     }
   ]
